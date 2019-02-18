@@ -4,15 +4,6 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-##This function Function makeCacheMatrix gets a matrix as an input, set the value of the matrix,
-#get the value of the matrix, set the inverse Matrix and get the inverse Matrix. The matrix object
-#can cache its own object. 
-
-#<<- operator is used to assign a value to an object in an environment that is different 
-#from the current environment 
-
-#take the matrix as an input
-makeCacheMatrix <- function(x = matrix()) {
   invMatrix <- NULL
 
   #set the value of the Matrix
@@ -34,7 +25,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
 
-  #get the value of the invertible matrix from the makeCacheMatrix function
   invMatrix <- x$getInverse()
   if(!is.null(invMatrix)) {                       #if inverse matrix is not NULL
     message("Getting Cached Invertible Matrix")   #Type message: Getting Cached Invertible Matrix 
